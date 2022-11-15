@@ -6,7 +6,7 @@ inoremap <expr> <c-k> ("\<C-p>")
 nnoremap <M-j>    :resize -2<CR>
 nnoremap <M-k>    :resize +2<CR>
 nnoremap <M-h>    :vertical resize -2<CR>
-nnoremap M-l>    :vertical resize +2<CR>
+nnoremap <M-l>    :vertical resize +2<CR>
 
 " I hate escape more than anything else
 inoremap jk <Esc>
@@ -42,3 +42,7 @@ nnoremap <C-l> <C-w>l
 
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da<
+
+" nnoremap <C-F> :NERDTreeFocus<CR>
+" nnoremap <C-N> :NERDTree<CR>
+nnoremap <C-B> :NERDTreeToggle<CR>

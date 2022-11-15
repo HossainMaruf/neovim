@@ -4,6 +4,15 @@ call plug#begin('$HOME/AppData/Local/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
 
+	" Motion
+	Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+	Plug 'tpope/vim-commentary', {'branch': 'master'}
+	Plug 'tpope/vim-surround', {'branch': 'master'}
+	Plug 'preservim/tagbar', {'branch': 'master'}
+	" ISSUE
+	" Plug 'tc50cal/vim-terminal', {'branch': 'master'}
+
+
 	" Themes
     Plug 'joshdick/onedark.vim'
 
@@ -14,24 +23,51 @@ call plug#begin('$HOME/AppData/Local/nvim/autoload/plugged')
     " File Explorer
     Plug 'scrooloose/NERDTree'
 
-    " Better Syntax Support
-    " Have loading problem due to this package
-    "Plug 'sheerun/vim-polyglot'
+	" Icons (ISSUE)
+	Plug 'ryanoasis/vim-devicons'
+	Plug 'nvim-tree/nvim-web-devicons'
 
-    " FZF
+	" Better Syntax Support
+    Plug 'sheerun/vim-polyglot'
+	
+
+
+	" Finder LeaderF (issue)
+    " Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+
+
+
+	" Finder  vimClap (issue)
+	Plug 'liuchengxu/vim-clap'
+	" Build the extra binary if cargo exists on your system.
+	Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
+	" The bang version will try to download the prebuilt binary if cargo does not exist.
+	Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
+	" :Clap install-binary[!] will always try to compile the binary locally,
+	" if you do care about the disk used for the compilation, try using the force download way,
+	" which will download the prebuilt binary even you have installed cargo.
+	Plug 'liuchengxu/vim-clap', { 'do': { -> clap#installer#force_download() } }
+	" `:Clap install-binary[!]` will run using the terminal feature which is inherently async.
+	" If you don't want that and hope to run the hook synchorously:
+	Plug 'liuchengxu/vim-clap', { 'do': has('win32') ? 'cargo build --release' : 'make' }
+	
+
+
+	" FZF
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
-    "Plug 'airblade/vim-rooter'
+
+
+
+	" PROJECT RELATED PLUGINS
+	
+    Plug 'airblade/vim-rooter'
 	
 
 	" Telescope
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 	" or                                , { 'branch': '0.1.x' }
-
-	" Telescope
-    "Plug 'nvim-lua/popup.nvim'
-    "Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
 	" Language Support
 	

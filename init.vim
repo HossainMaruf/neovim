@@ -1,20 +1,35 @@
+" BASH PATH
 let $PATH = "C:\\Program Files\\Git\\usr\\bin;".$PATH
 
-" Settings
+" SETTINGS
 source $HOME/AppData/Local/nvim/general/settings.vim
 
-" Key Mappings
+" KEY MAPPING
 source $HOME/AppData/Local/nvim/keys/mappings.vim
 
-" Plugins
+" PLUGINS
 source $HOME/AppData/Local/nvim/vim-plug/plugins.vim
 
-" Themes Config
+" THEMES CONFIG
 source $HOME/AppData/Local/nvim/themes/airline.vim
 source $HOME/AppData/Local/nvim/themes/onedark.vim
 
 
-" Plug Config
+" PLUG CONFIG
 source $HOME/AppData/Local/nvim/plug-config/fzf.vim
 source $HOME/AppData/Local/nvim/plug-config/closeTag.vim
 source $HOME/AppData/Local/nvim/plug-config/telescope.vim 
+" source $HOME/AppData/Local/nvim/plug-config/icons.vim 
+
+
+
+" HIGHTLIGHTED YANK
+
+" au TextYankPost * silent! lua vim.highlight.on_yank()
+au TextYankPost * silent! lua vim.highlight.on_yank {higroup="IncSearch", timeout=150}
+" au TextYankPost * silent! lua vim.highlight.on_yank {on_visual=false}
+
+
+
+" TAGBAR Plugin ISSUE
+" let g:airline#extensions#tagbar#enabled=1
