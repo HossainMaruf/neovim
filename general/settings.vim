@@ -1,0 +1,10 @@
+set number
+"set paste
+set relativenumber
+set smarttab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set autoindent
+set mouse=a
+"colorscheme slate
