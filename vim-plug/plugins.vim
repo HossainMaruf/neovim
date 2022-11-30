@@ -23,6 +23,9 @@ call plug#begin('$HOME/AppData/Local/nvim/autoload/plugged')
     " File Explorer
     Plug 'scrooloose/NERDTree'
 
+	" Which Key
+	Plug 'folke/which-key.nvim'
+
 	" Icons (ISSUE)
 	Plug 'ryanoasis/vim-devicons'
 	Plug 'nvim-tree/nvim-web-devicons'
@@ -74,11 +77,13 @@ call plug#begin('$HOME/AppData/Local/nvim/autoload/plugged')
 	" For Tag completion
     Plug 'alvan/vim-closetag'
 
+	" COC nvim
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " HTML, JS and TS
     "Plug 'leafgarland/typescript-vim'
     "Plug 'neoclide/coc.nvim', {'do': 'npm install --frozen-lockfile'}
-    "let g:coc_global_extensions = ['coc-emmet', 'coc-eslint']
-    "let g:coc_global_extensions = ['coc-css', 'coc-cssmodules', 'coc-dash-complete', 'coc-dot-complete',  'coc-explorer', 'coc-git', 'coc-html', 'coc-htmlhint', 'coc-html-css-support', 'coc-json', 'coc-stylelintplus', 'coc-snippets', 'coc-prettier', 'coc-tsserver', 'coc-tslint', 'coc-python']
+	
+    let g:coc_global_extensions = ['coc-css', 'coc-cssmodules', 'coc-dash-complete', 'coc-dot-complete',  'coc-explorer', 'coc-git', 'coc-html', 'coc-htmlhint', 'coc-html-css-support', 'coc-json', 'coc-stylelintplus', 'coc-snippets',  'coc-emmet', 'coc-prettier', 'coc-tsserver', 'coc-tslint', 'coc-eslint', 'coc-python']
 
 call plug#end()
 
