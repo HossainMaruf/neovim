@@ -26,9 +26,6 @@ call plug#begin('$HOME/AppData/Local/nvim/autoload/plugged')
 	" Which Key
 	Plug 'folke/which-key.nvim'
 
-	" Icons (ISSUE)
-	Plug 'ryanoasis/vim-devicons'
-	Plug 'nvim-tree/nvim-web-devicons'
 
 	" Better Syntax Support
     Plug 'sheerun/vim-polyglot'
@@ -37,6 +34,10 @@ call plug#begin('$HOME/AppData/Local/nvim/autoload/plugged')
 
 	" Finder LeaderF (issue)
     " Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+	
+
+	" Icons
+	Plug 'ryanoasis/vim-devicons'
 
 
 
@@ -84,6 +85,7 @@ call plug#begin('$HOME/AppData/Local/nvim/autoload/plugged')
     "Plug 'neoclide/coc.nvim', {'do': 'npm install --frozen-lockfile'}
 	
     let g:coc_global_extensions = ['coc-css', 'coc-cssmodules', 'coc-dash-complete', 'coc-dot-complete',  'coc-explorer', 'coc-git', 'coc-html', 'coc-htmlhint', 'coc-html-css-support', 'coc-json', 'coc-stylelintplus', 'coc-snippets',  'coc-emmet', 'coc-prettier', 'coc-tsserver', 'coc-tslint', 'coc-eslint', 'coc-python']
+
 
 call plug#end()
 

@@ -20,8 +20,7 @@ source $HOME/AppData/Local/nvim/plug-config/fzf.vim
 source $HOME/AppData/Local/nvim/plug-config/closeTag.vim
 source $HOME/AppData/Local/nvim/plug-config/telescope.vim 
 source $HOME/AppData/Local/nvim/plug-config/whichkey.vim 
-" source $HOME/AppData/Local/nvim/plug-config/icons.vim 
-
+"source $HOME/AppData/Local/nvim/plug-config/icons.vim 
 
 
 " HIGHTLIGHTED YANK
