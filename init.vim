@@ -20,6 +20,7 @@ source $HOME/AppData/Local/nvim/plug-config/fzf.vim
 source $HOME/AppData/Local/nvim/plug-config/closeTag.vim
 source $HOME/AppData/Local/nvim/plug-config/telescope.vim 
 source $HOME/AppData/Local/nvim/plug-config/whichkey.vim 
+source $HOME/AppData/Local/nvim/plug-config/coc.vim 
 "source $HOME/AppData/Local/nvim/plug-config/icons.vim 
 
 
@@ -28,6 +29,10 @@ source $HOME/AppData/Local/nvim/plug-config/whichkey.vim
 " au TextYankPost * silent! lua vim.highlight.on_yank()
 au TextYankPost * silent! lua vim.highlight.on_yank {higroup="IncSearch", timeout=150}
 " au TextYankPost * silent! lua vim.highlight.on_yank {on_visual=false}
+
+
+
+" let g:python3_host_prog = expand('C:\ProgramData\chocolatey\bin\python.exe')
 
 
 

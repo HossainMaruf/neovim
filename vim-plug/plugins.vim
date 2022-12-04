@@ -78,13 +78,22 @@ call plug#begin('$HOME/AppData/Local/nvim/autoload/plugged')
 	" For Tag completion
     Plug 'alvan/vim-closetag'
 
-	" COC nvim
+	" Tabnine
+	" ISSUE
+	" Plug 'aca/completion-tabnine', { 'do': './install.sh' }
+
+	" Coc nvim
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+	
+	" Coc-jedi language server
+	" ISSUE THERE But it is useful engine
+	" Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build', 'branch': 'main' }
+
     " HTML, JS and TS
     "Plug 'leafgarland/typescript-vim'
-    "Plug 'neoclide/coc.nvim', {'do': 'npm install --frozen-lockfile'}
 	
-    let g:coc_global_extensions = ['coc-css', 'coc-cssmodules', 'coc-dash-complete', 'coc-dot-complete',  'coc-explorer', 'coc-git', 'coc-html', 'coc-htmlhint', 'coc-html-css-support', 'coc-json', 'coc-stylelintplus', 'coc-snippets',  'coc-emmet', 'coc-prettier', 'coc-tsserver', 'coc-tslint', 'coc-eslint', 'coc-python']
+    let g:coc_global_extensions = ['coc-css', 'coc-cssmodules', 'coc-dash-complete', 'coc-dot-complete',  'coc-explorer', 'coc-git', 'coc-html', 'coc-htmlhint', 'coc-html-css-support', 'coc-json', 'coc-stylelintplus', 'coc-snippets',  'coc-emmet', 'coc-prettier', 'coc-tsserver', 'coc-tslint', 'coc-eslint', 'coc-tabnine', 'coc-python', 'coc-pyright']
 
 
 call plug#end()
