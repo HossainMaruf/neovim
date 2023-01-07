@@ -1,17 +1,21 @@
-require("maruf.plugins-setup")
-require("maruf.core.options")
-require("maruf.core.keymaps")
-require("maruf.core.colorscheme")
-require("maruf.plugins.comment")
-require("maruf.plugins.nvim-tree")
-require("maruf.plugins.lualine")
-require("maruf.plugins.telescope")
-require("maruf.plugins.nvim-cmp")
-require("maruf.plugins.autopairs")
-require("maruf.plugins.treesitter")
-require("maruf.plugins.gitsigns")
-
-require("maruf.plugins.lsp.mason")
-require("maruf.plugins.lsp.lspsaga")
-require("maruf.plugins.lsp.lspconfig")
-require("maruf.plugins.lsp.null-ls")
+require "user.options"
+require "user.keymaps"
+require "user.plugins"
+require "user.colorscheme"
+require "user.cmp"
+require "user.lsp"
+require "user.telescope"
+require "user.gitsigns"
+require "user.treesitter"
+require "user.autopairs"
+require "user.comment"
+require "user.nvim-tree"
+require "user.bufferline"
+require "user.lualine"
+require "user.toggleterm"
+require "user.project"
+require "user.impatient"
+require "user.indentline"
+require "user.alpha"
+require "user.whichkey"
+require "user.autocommands"
