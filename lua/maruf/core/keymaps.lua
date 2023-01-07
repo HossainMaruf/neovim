@@ -2,7 +2,6 @@
 vim.g.mapleader = " "
 
 local keymap = vim.keymap -- for conciseness
-
 ---------------------
 -- General Keymaps
 ---------------------
@@ -21,6 +20,17 @@ keymap.set("n", "<leader>+", "<C-a>") -- increment
 keymap.set("n", "<leader>-", "<C-x>") -- decrement
 
 -- window management
+-- Use alt + hjkl to resize windows
+keymap.set("n", "<M-j>", ":resize -2<CR>")
+keymap.set("n", "<M-k>", ":resize +2<CR>")
+keymap.set("n", "<M-h>", ":vertical resize -2<CR>")
+keymap.set("n", "<M-l>", ":vertical resize +2<CR>")
+keymap.set("n", "<leader>w", ":w<CR>")
+keymap.set("v", "<", "<gv")
+keymap.set("v", ">", ">gv")
+keymap.set("n", "<C-m>", ":m .+1<CR>")
+keymap.set("n", "<C-n>", ":m .-2<CR>")
+
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
 keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width & height
